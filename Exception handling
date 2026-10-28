@@ -1,0 +1,13 @@
+try:
+    a = int(input("Enter the first integer: "))
+    b = int(input("Enter the second integer: "))
+    result = a/b
+except ValueError:
+    print("Enter valid integers.")
+except ZeroDivisionError:
+    print("Division by zero is not possible.")
+    
+else:
+    print(result)
+finally:
+    print("Program execution completed.")
